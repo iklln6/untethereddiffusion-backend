@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+asyncpg
+#databases  # Optional if using async DB access; SQLAlchemy 2.x natively supports async without needing this library
+bcrypt
+pydantic
+python-dotenv
+requests
+email-validator
+#psycopg2-binary
+python-jose[cryptography]
