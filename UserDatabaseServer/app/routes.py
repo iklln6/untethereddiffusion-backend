@@ -11,11 +11,14 @@ from app.models import User
 import os
 import requests
 
+from dotenv import dotenv_values
+
+dot_env_vars = dotenv_values("../../.env")
 
 
 
-RUNPOD_API_KEY = os.getenv("RUNPOD_API_KEY")
-RUNPOD_ENDPOINT = os.getenv("RUNPOD_ENDPOINT")
+RUNPODS_API_KEY = dot_env_vars['RUNPODS_API_KEY']
+RUNPODS_ENDPOINT = dot_env_vars['RUNPODS_ENDPOINT']
 
 
 
